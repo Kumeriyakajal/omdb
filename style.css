@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #242A32;
+}
+h1 {
+    margin-bottom: 20px;
+    font-size: 64px;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: center;
+    -webkit-text-stroke: 1px #0296E5;
+    -webkit-text-fill-color:#242A32;
+}
+
+#api-key{
+    width: 1450px;
+    height: 51px;
+    padding: 7px;
+    margin-left:30px;
+    border-radius: 8px;
+    background: #3A3F47;
+}
+#movie-title {
+    width: 1450px;
+    height: 51px;
+    margin-top:20px;
+    padding: 7px;
+    margin-left:30px;
+    border-radius: 8px;
+    background: #3A3F47;
+}
+
+.loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+    display: none;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.movie-card {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.movie-poster {
+    max-width: 80px;
+    margin-right: 10px;
+}
+
+.movie-details {
+    flex: 1;
+}
+
+.movie-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.movie-year {
+    color: #777;
+}
+
+.imdb-link {
+    color: #007bff;
+    text-decoration: none;
+}
